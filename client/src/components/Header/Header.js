@@ -7,7 +7,7 @@ class Header extends Component {
   }
   render() {
     return(
-      <div className={styles.HeaderContainer}>
+      <div className={styles.Header}>
         <div className={styles.Logo}>
           FreeBeeGram
         </div>

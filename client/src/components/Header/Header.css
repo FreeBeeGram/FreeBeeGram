@@ -1,0 +1,14 @@
+.Header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.Header .Logo {
+  font-size: 30px;
+}
+
+.Header .Links {
+  align-self: center;
+}
