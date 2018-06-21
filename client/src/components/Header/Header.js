@@ -12,13 +12,13 @@ class Header extends Component {
           FreeBeeGram
         </div>
         <div className={styles.Links}>
-          <a href="#">Collaborate</a>
-          <a href="#">Connect</a>
-          <a href="#">Learn</a>
-          <a href="#">Brands</a>
-          <a href="#">About Us</a>
-          <a href="#">Join Now</a>
-          <a href="#">Login</a>
+          <a className={styles.Link} href="#">Collaborate</a>
+          <a className={styles.Link} href="#">Connect</a>
+          <a className={styles.Link} href="#">Learn</a>
+          <a className={styles.Link} href="#">Brands</a>
+          <a className={styles.Link} href="#">About Us</a>
+          <a className={styles.Link} href="#">Join Now</a>
+          <a className={styles.Link} href="#">Login</a>
         </div>
       </div>
     )

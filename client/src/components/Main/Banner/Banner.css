@@ -1,0 +1,31 @@
+.Banner {
+  background-image: url(../../../img/selfie.jpg);
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.Banner .MainText {
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+.Banner .SecondaryText {
+  margin-top: 1rem;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.Banner .BannerButton {
+  margin-top: 3rem;
+  padding: 1.5rem 5rem;
+  font-size: 2rem;
+  background-color: black;
+  color: white;
+  border: none;
+}
