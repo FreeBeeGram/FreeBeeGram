@@ -23,3 +23,7 @@
 /*add some animation effects on buttons */
 .Header .Link:hover {
 }
+
+.Header .Icon {
+  display: none;
+}

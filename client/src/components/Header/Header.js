@@ -5,13 +5,14 @@ class Header extends Component {
   state = {
     signedIn: false
   }
+
   render() {
     return(
       <div className={styles.Header}>
         <div className={styles.Logo}>
           FreeBeeGram
         </div>
-        <div className={styles.Links}>
+        <div className={styles.Links} id="myTopNav">
           <a className={styles.Link} href="#">Collaborate</a>
           <a className={styles.Link} href="#">Connect</a>
           <a className={styles.Link} href="#">Learn</a>
@@ -19,6 +20,9 @@ class Header extends Component {
           <a className={styles.Link} href="#">About Us</a>
           <a className={styles.Link} href="#">Join Now</a>
           <a className={styles.Link} href="#">Login</a>
+          <a href="javascript:void(0);" className="styles.Icon" onClick={this.openNavBar}>
+          <i class="fa fa-bars"></i>
+          </a>
         </div>
       </div>
     )
