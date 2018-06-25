@@ -7,30 +7,36 @@ class Apply extends Component {
       <div className={styles.Apply}>
         <div className={styles.Header}>FreeBeeGram</div>
         <div className={styles.FormContainer}>
+          <div className={styles.FormHeader}>
+            <div className={styles.FormHeaderText}>Create an account</div>
+            <div className={styles.FormHeaderDesc}>Please enter your e-mail address and password, and pick your category - i.e. the them you're most interested in:</div>
+          </div>
           <form className={styles.Form}>
-            <label>E-Mail</label>
-            <input placeholder="Enter e-mail address"/>
-            <label>Password</label>
-            <input/>
-            <label>Gender</label>
-            <input/>
-            <label>Birth Date</label>
-            <div>
-              <select name="month">
-              <option value="january">January</option>
-              <option value="february">February</option>
-              <option value="march">March</option>
-              <option value="april">April</option>
-              <option value="may">May</option>
-              <option value="june">June</option>
-              <option value="july">July</option>
-              <option value="august">August</option>
-              <option value="september">September</option>
-              <option value="october">October</option>
-              <option value="november">November</option>
-              <option value="december">December</option>
+            <label className={styles.FormLabels}>E-Mail</label>
+            <input className={styles.FormInput} placeholder="Enter e-mail address"/>
+            <label className={styles.FormLabels}>Password</label>
+            <input className={styles.FormInput} />
+            <label className={styles.FormLabels}>Gender</label>
+            <input className={styles.FormInput} />
+            <label className={styles.FormLabels}>Birth Date</label>
+            <div className={styles.FormSelectContainer}>
+              <select className={styles.FormSelect} name="month">
+                <option selected disabled>Month</option>
+                <option value="january">January</option>
+                <option value="february">February</option>
+                <option value="march">March</option>
+                <option value="april">April</option>
+                <option value="may">May</option>
+                <option value="june">June</option>
+                <option value="july">July</option>
+                <option value="august">August</option>
+                <option value="september">September</option>
+                <option value="october">October</option>
+                <option value="november">November</option>
+                <option value="december">December</option>
               </select>
-              <select name="day">
+              <select className={styles.FormSelect} name="day">
+                <option selected disabled>Day</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -62,11 +68,22 @@ class Apply extends Component {
                 <option value="30">30</option>
                 <option value="31">31</option>
               </select>
-              <select name="year">
+              <select className={styles.FormSelect} name="year">
+                <option selected disabled>Year</option>
                 <option value="2018">2018</option>
               </select>
             </div>
-            <button>Continue</button>
+            <div className={styles.TermsSection}>
+              <label>
+                <input type="checkbox"/>
+                I have read and agreed to the Privacy Terms.
+              </label>
+              <label>
+                <input type="checkbox"/>
+                I have read and agreed to the Specific Conditions.
+              </label>
+            </div>
+            <button className={styles.FormButton}>Continue</button>
           </form>
         </div>
       </div>

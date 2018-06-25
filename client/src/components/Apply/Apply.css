@@ -4,23 +4,96 @@
   justify-content: center;
   align-items: center;
   background-color: #efefef;
-  height: 100vh;
 }
 
 .Apply .Header {
   font-family: "Oleo Script";
   font-size: 5rem;
 }
+/* ---- Styling the form ---- */
 
 .Apply .FormContainer {
   background-color: #fff;
-  padding: 5rem 3rem;
-  margin-top: 3rem;
+  padding: 3rem 3rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
+  width: 30%;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
 }
 
 .Apply .Form {
   display: flex;
   flex-direction: column;
+}
+/* ---- Form Header ---- */
+.Apply .FormHeader {
+  font-weight: 600;
+  flex-wrap: wrap;
+}
+
+.FormHeader .FormHeaderText {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.FormHeader .FormHeaderDesc {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+/* ---- Form Labels and Inputs ---- */
+.Apply .FormLabels {
+  margin-bottom: 0.6rem;
+}
+
+.Apply .FormInput {
+  margin-bottom: 0.8rem;
+  height: 3.4rem;
+  font-size: 1.1rem;
+  color: #333;
+  border: 1px solid #ebebed;
+  border-radius: 2px;
+  cursor: auto;
+}
+
+.Apply .FormSelectContainer {
+  display: flex;
+}
+
+.Apply .FormSelect {
+  background-color: #fff;
+  border: 1px solid #e8ebed;
+  outline: 0;
+  border-radius: 2px;
+  height: 3.4rem !important;
+  line-height: 1.42;
+  padding: 6px 24px 6px 12px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  margin-right: 1.2rem;
+}
+
+.Apply input {
+  margin-right: 1rem;
+}
+
+/* ---- Form Footer ---- */
+.Apply .TermsSection {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem;
+  background-color: #efefef;
+  /* margin: 1.5rem; */
+}
+
+.Apply .FormButton {
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.2rem;
 }
