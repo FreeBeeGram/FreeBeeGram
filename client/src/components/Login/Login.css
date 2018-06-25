@@ -7,21 +7,109 @@
   font-size: 2.2rem;
   background-color: black;
   color: white;
+  padding: 0.5rem 1rem;
+  height: 5vh;
 }
 
-.LoginContainer .HeaderLogo {
+/* .LoginContainer .HeaderLogo {
   padding: 0.5rem 1rem;
-}
+} */
 
 /* Body */
 .LoginContainer .BodyContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100%;
+  background-color: #efefef;
+  height: 94vh;
 }
 
 .LoginContainer .BodyMessage {
-  margin: 5rem 0;
+  margin-bottom: 5rem;
   font-size: 2.5rem;
+}
+
+/* Forms */
+.LoginContainer .FormsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.LoginContainer .FormHeader {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.LoginContainer .LoginForms {
+  padding: 3rem 3rem;
+  background-color: #fff;
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
+  margin-right: 1rem;
+  width: 370px;
+}
+
+/* Input */
+.LoginContainer input {
+  margin-bottom: 0.8rem;
+  height: 3.4rem;
+  font-size: 1.1rem;
+  color: #333;
+  border: 1px solid #ebebed;
+  border-radius: 2px;
+  cursor: auto;
+}
+
+.LoginContainer .LoginForm {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Buttons */
+.LoginContainer .Button {
+  margin: 1.5rem 0;
+  padding: 1rem 2rem;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Footer */
+.LoginContainer .Footer {
+  text-align: right;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 581px) and (max-width: 1024px) {
+  .LoginContainer .FormsContainer {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  .LoginContainer .BodyContainer {
+    height: 100%;
+  }
+
+  .LoginContainer .BodyMessage {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 580px) {
+  .LoginContainer .FormsContainer {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .LoginContainer .BodyMessage {
+    margin-bottom: 1.5rem;
+  }
 }

@@ -22,6 +22,7 @@
   width: 35%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
+  border: 1px solid rgb(201, 201, 201);
 }
 
 @media only screen and (min-width: 581px) and (max-width: 1024px) {
