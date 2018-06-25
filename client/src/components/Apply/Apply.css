@@ -19,7 +19,7 @@
   margin: 2rem;
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 35%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
 }
@@ -109,7 +109,8 @@
   padding: 1rem 2rem;
   background-color: #000;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 /* ---- Form Footer  ---- */

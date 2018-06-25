@@ -83,7 +83,7 @@ class Apply extends Component {
                 I have read and agreed to the Specific Conditions.
               </label>
             </div>
-            <button className={styles.FormButton}>Continue</button>
+            <button className={styles.FormButton}>CONTINUE</button>
           </form>
           <hr/>
           <div className={styles.FormFooter}>

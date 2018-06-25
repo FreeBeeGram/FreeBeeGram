@@ -1,0 +1,27 @@
+.LoginContainer {
+}
+
+/* Header */
+.LoginContainer .Header {
+  font-family: var(--logo-font);
+  font-size: 2.2rem;
+  background-color: black;
+  color: white;
+}
+
+.LoginContainer .HeaderLogo {
+  padding: 0.5rem 1rem;
+}
+
+/* Body */
+.LoginContainer .BodyContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.LoginContainer .BodyMessage {
+  margin: 5rem 0;
+  font-size: 2.5rem;
+}
