@@ -85,6 +85,11 @@ class Apply extends Component {
             </div>
             <button className={styles.FormButton}>Continue</button>
           </form>
+          <hr/>
+          <div className={styles.FormFooter}>
+            <div>Already have an account ?</div>
+            <button className={styles.SignInButton}>Sign In</button>
+          </div>
         </div>
       </div>
     )
