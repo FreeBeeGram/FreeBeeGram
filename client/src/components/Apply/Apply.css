@@ -23,6 +23,18 @@
   box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
 }
 
+@media only screen and (min-width: 581px) and (max-width: 1024px) {
+  .Apply .FormContainer {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 580px) {
+  .Apply .FormContainer {
+    width: 85%;
+  }
+}
+
 .Apply .Form {
   display: flex;
   flex-direction: column;
