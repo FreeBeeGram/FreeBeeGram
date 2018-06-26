@@ -1,0 +1,17 @@
+.CreatorFilter {
+  padding: 1.5rem 1.5rem;
+  background-color: #efefef;
+  border: 1px solid #bdbdbd;
+  border-radius: 3px;
+  margin-left: 1.5rem;
+}
+
+.CreatorFilter .CategoryTitle {
+  font-weight: 700;
+  margin-inline-start: 0.4rem 0;
+}
+
+.CreatorFilter .CategoryBrands {
+  font-weight: 700;
+  margin: 0.4rem 0;
+}
