@@ -1,0 +1,22 @@
+.CreatorProducts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0 2rem;
+}
+
+.CreatorProducts .ItemProduct {
+  height: 364px;
+  width: 236px;
+  border: 1px solid #bdbdbd;
+  border-radius: 3px;
+  margin: 2rem;
+}
+
+.CreatorProducts .ItemImage {
+  max-height: 100%;
+  max-width: 100%;
+  border-bottom: 1px solid #bdbdbd;
+}

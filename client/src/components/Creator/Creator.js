@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styles from './Creator.css';
 import CreatorHeader from './CreatorHeader/CreatorHeader';
 import CreatorFilter from './CreatorFilter/CreatorFilter';
+import CreatorProducts from './CreatorProducts/CreatorProducts';
 
 class Creator extends Component {
   render() {
@@ -10,7 +11,7 @@ class Creator extends Component {
         <CreatorHeader />
         <div className={styles.CreatorMain}>
           <CreatorFilter />
-          <div>world</div>
+          <CreatorProducts />
         </div>
       </div>
     )
