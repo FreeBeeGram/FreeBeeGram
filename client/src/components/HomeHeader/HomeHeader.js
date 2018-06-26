@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import styles from './Header.css';
+import styles from './HomeHeader.css';
 
-class Header extends Component {
+class HomeHeader extends Component {
   state = {
     signedIn: false
   }
@@ -29,4 +29,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default HomeHeader;
