@@ -5,6 +5,8 @@
   height: 5vh;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .CreatorHeader .HeaderLogo {
@@ -20,4 +22,5 @@
 .CreatorHeader .HeaderLinks div {
   color: #fff;
   margin-left: 1.5rem;
+  font-size: 1.2rem;
 }
