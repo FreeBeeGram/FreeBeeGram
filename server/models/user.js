@@ -5,12 +5,12 @@ const Schema = mongoose.Schema;
 const userSchema = new Schema({
   email: { type: String, unique: true, lowercase: true },
   password: String,
-  handle: String,
-  sex: String,
-  age: Number,
-  first_name: String,
-  last_name: String,
-  bio: String
+  // handle: String,
+  // sex: String,
+  // age: Number,
+  // first_name: String,
+  // last_name: String,
+  // bio: String
 })
 
 // Create the model class
