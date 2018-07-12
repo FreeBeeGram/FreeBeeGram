@@ -1,4 +1,4 @@
-import { USER_SIGNUP } from 'actions/types';
+import { USER_SIGNUP } from './types';
 
 export function userSignup(userData) {
   return {
