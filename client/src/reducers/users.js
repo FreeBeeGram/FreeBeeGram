@@ -1,4 +1,4 @@
-import { USER_SIGNUP } from 'actions/types'
+import { USER_SIGNUP } from '../actions/types'
 
 export default function(state = [], action) {
   switch (action.type) {
