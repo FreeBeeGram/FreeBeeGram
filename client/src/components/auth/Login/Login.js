@@ -1,8 +1,16 @@
 import React, { Component } from 'react';
+import { reduxForm, Field } from 'redux-form';
 import styles from './Login.css';
 
 class Login extends Component {
+
+  onSubmit = (formProps) => {
+    console.log(formProps);
+  };
+
   render() {
+    const { handleSubmit } = this.props;
+
     return(
       <div className={styles.LoginContainer}>
         <div className={styles.Header}>
@@ -13,9 +21,25 @@ class Login extends Component {
           <div className={styles.FormsContainer}>
             <div className={styles.LoginForms}>
               <div className={styles.FormHeader}>I'm a Creator</div>
-              <form className={styles.LoginForm}>
-                <input placeholder="E-mail"/>
-                <input placeholder="Password"/>
+              <form onSubmit={handleSubmit(this.onSubmit)} className={styles.LoginForm}>
+                <fieldset>
+                  <Field 
+                    name="email"
+                    type="text"
+                    component="input"
+                    placeholder="E-mail"
+                    autoComplete="none"
+                  />
+                </fieldset>
+                <fieldset>
+                  <Field 
+                    name="password"
+                    type="password"
+                    component="input"
+                    placeholder="Password"
+                    autoComplete="none"
+                  />
+                </fieldset>
                 <div>Forgot?</div>
                 <button className={styles.Button}>SIGN IN</button>
                 <div className={styles.Footer}>Need an account? I'm a Creator</div>
@@ -24,8 +48,24 @@ class Login extends Component {
             <div className={styles.LoginForms}>
               <div className={styles.FormHeader}>I'm a Brand</div>
                 <form className={styles.LoginForm}>
-                  <input placeholder="E-mail"/>
-                  <input placeholder="Password"/>
+                  <fieldset>
+                    <Field 
+                      name="email"
+                      type="text"
+                      component="input"
+                      placeholder="E-mail"
+                      autoComplete="none"
+                    />
+                  </fieldset>
+                  <fieldset>
+                    <Field 
+                      name="password"
+                      type="password"
+                      component="input"
+                      placeholder="Password"
+                      autoComplete="none"
+                    />
+                  </fieldset>
                   <div>Forgot?</div>
                   <button className={styles.Button}>SIGN IN</button>
                   <div className={styles.Footer}>Need an account? I'm a Brand</div>
@@ -38,4 +78,4 @@ class Login extends Component {
   }
 }
 
-export default Login;
+export default reduxForm({ form: 'login' })(Login);
