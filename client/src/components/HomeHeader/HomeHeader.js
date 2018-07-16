@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styles from './HomeHeader.css';
+import { Link } from 'react-router-dom';
 
 class HomeHeader extends Component {
   state = {
@@ -18,11 +19,11 @@ class HomeHeader extends Component {
           <a className={styles.Link} href="#">Learn</a>
           <a className={styles.Link} href="#">Brands</a>
           <a className={styles.Link} href="#">About Us</a>
-          <a className={styles.Link} href="#">Join Now</a>
-          <a className={styles.Link} href="#">Login</a>
-          <a href="javascript:void(0);" className="styles.Icon" onClick={this.openNavBar}>
+          <Link to="/signup" className={styles.Link}>Join Now</Link>
+          <Link to="/login" className={styles.Link}>Login</Link>
+          {/* <a href="javascript:void(0);" className="styles.Icon" onClick={this.openNavBar}>
           <i class="fa fa-bars"></i>
-          </a>
+          </a> */}
         </div>
       </div>
     )
