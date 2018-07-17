@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import { reduxForm, Field } from 'redux-form';
+import { compose } from 'redux';
+import { connect } from 'react-redux';
 import styles from './Login.css';
+import * as actions from '../../../actions';
 
 class Login extends Component {
 
   onSubmit = (formProps) => {
-    console.log(formProps);
+    this.props.signup(formProps);
   };
 
   render() {
@@ -67,6 +70,7 @@ class Login extends Component {
                     />
                   </fieldset>
                   <div>Forgot?</div>
+                  <div>{this.props.errorMessage}</div>
                   <button className={styles.Button}>SIGN IN</button>
                   <div className={styles.Footer}>Need an account? I'm a Brand</div>
                 </form>
@@ -78,4 +82,11 @@ class Login extends Component {
   }
 }
 
-export default reduxForm({ form: 'login' })(Login);
+function mapStateToProps(state) {
+  return { errorMessage: state.auth.errorMessage };
+}
+
+export default compose(
+  connect(mapStateToProps, actions),
+  reduxForm({ form: 'login' })
+)(Login);
